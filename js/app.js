@@ -13,6 +13,7 @@ function randomCust(min, max) {
 //   for
 // }
 let allCities = [];
+let cityForm = document.getElementById('addedCity');
 
 function renderHeader() {
   let tableHeadElem = document.createElement('thead');
@@ -117,6 +118,34 @@ function renderFooter() {
   trFooterElem.appendChild(superGrandTotal);
   superGrandTotal.textContent = grandTotal;
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = event.target.city.value;
+  let min = +event.target.min.value;
+  let max = +event.target.max.value;
+  let avgAmountSale = +event.target.avgAmountSale.value;
+
+  let newestCity = new City(city, min, max, avgAmountSale);
+
+
+
+
+  newestCity.cookiesSold();
+  newestCity.storeCalculatedTotal();
+  newestCity.renderBody();
+
+  document.querySelector('tfoot').remove();
+
+  cityForm.reset();
+  renderFooter();
+  console.log(newestCity.cookiesSold());
+
+
+}
+
+// query selector, remove totals row and 
+
 let seattle = new City('Seattle', 23, 65, 6.3);
 let tokyo = new City('Tokyo', 3, 24, 1.2);
 let dubai = new City('Dubai', 11, 38, 3.7);
@@ -125,27 +154,17 @@ let lima = new City('Lima', 2, 16, 4.6);
 
 renderHeader();
 
-seattle.cookiesSold();
-seattle.storeCalculatedTotal();
-seattle.renderBody();
+function renderAllCities() {
+  for (let i = 0; i < allCities.length; i++) {
 
-tokyo.cookiesSold();
-tokyo.storeCalculatedTotal();
-tokyo.renderBody();
-
-dubai.cookiesSold();
-dubai.storeCalculatedTotal();
-dubai.renderBody();
-
-paris.cookiesSold();
-paris.storeCalculatedTotal();
-paris.renderBody();
-
-lima.cookiesSold();
-lima.storeCalculatedTotal();
-lima.renderBody();
-
+    allCities[i].cookiesSold();
+    allCities[i].storeCalculatedTotal();
+    allCities[i].renderBody();
+  }
+}
+renderAllCities();
 
 renderFooter();
 
+cityForm.addEventListener('submit', handleSubmit);
 

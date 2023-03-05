@@ -1,8 +1,8 @@
 body {
   background: #EC799A;
-background: -moz-linear-gradient(left, #EC799A 0%, #69A583 28%, #E0CC97 100%);
-background: -webkit-linear-gradient(left, #EC799A 0%, #69A583 28%, #E0CC97 100%);
-background: linear-gradient(to right, #EC799A 0%, #69A583 28%, #E0CC97 100%);
+  background: -moz-linear-gradient(left, #EC799A 0%, #69A583 28%, #E0CC97 100%);
+  background: -webkit-linear-gradient(left, #EC799A 0%, #69A583 28%, #E0CC97 100%);
+  background: linear-gradient(to right, #EC799A 0%, #69A583 28%, #E0CC97 100%);
 }
 
 header {
@@ -11,8 +11,8 @@ header {
   font-weight: 600;
   color: #e0dfdc;
 
-letter-spacing: .1em;
-text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
 nav {
@@ -20,7 +20,7 @@ nav {
   padding: 10px;
   text-align: center;
   margin-top: 20px;
- 
+
 }
 
 a {
@@ -34,7 +34,49 @@ a:hover {
   color: salmon;
 }
 
-th, td {
+form {
+  border: 1px black;
+  margin: 20px;
+  font-size: 30px;
+}
+
+fieldset {
+  margin: 5px;
+}
+
+input {
+  font-size: 20px;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+button:hover {
+  background: #1C6EA4;
+}
+
+button:active {
+  background: #144E75;
+}
+
+
+th,
+td {
   border: 1px solid grey;
   padding: 5px;
   font-size: 20px;
@@ -53,4 +95,3 @@ table {
   -ms-transform: skew(0deg, -1.5deg);
   transform: skew(0deg, -1.5deg);
 }
-
