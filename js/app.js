@@ -146,10 +146,15 @@ function handleSubmit(event) {
 
 // query selector, remove totals row and 
 
+// eslint-disable-next-line no-unused-vars
 let seattle = new City('Seattle', 23, 65, 6.3);
+// eslint-disable-next-line no-unused-vars
 let tokyo = new City('Tokyo', 3, 24, 1.2);
+// eslint-disable-next-line no-unused-vars
 let dubai = new City('Dubai', 11, 38, 3.7);
+// eslint-disable-next-line no-unused-vars
 let paris = new City('Paris', 20, 38, 2.3);
+// eslint-disable-next-line no-unused-vars
 let lima = new City('Lima', 2, 16, 4.6);
 
 renderHeader();

@@ -13,7 +13,7 @@ stuff
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![Lighthouse Report](./img/Screenshot%202023-03-08%20at%2010.20.10%20AM.png)
 
 ### Reflections and Comments
 
