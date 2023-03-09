@@ -25,7 +25,7 @@ nav {
 
 a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   color: rgb(255, 255, 255);
   text-shadow: rgb(122, 122, 122) 4px 3px 0px;
 }
@@ -35,9 +35,13 @@ a:hover {
 }
 
 form {
-  border: 1px black;
+  text-align: center;
+  font-family: 'Rubik Iso', cursive;
+  color: rgb(77, 20, 66);
+  font-weight: 900;
   margin: 20px;
   font-size: 30px;
+  
 }
 
 fieldset {
@@ -53,6 +57,7 @@ button {
   font-size: 20px;
   line-height: 20px;
   padding: 10px;
+  margin: 10px;
   border-radius: 50px;
   font-family: Georgia, serif;
   font-weight: normal;
@@ -80,7 +85,7 @@ td {
   border: 1px solid grey;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 550;
   color: salmon;
 }

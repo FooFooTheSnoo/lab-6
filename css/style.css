@@ -59,6 +59,7 @@ a:hover {
 
 .locations {
   font-size: 30px;
+  color: red;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 25px;
   margin-bottom: 50px;
@@ -67,6 +68,7 @@ a:hover {
 
 .hours {
   font-size: 30px;
+  color: darkmagenta;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 25px;
   margin-bottom: 50px;
